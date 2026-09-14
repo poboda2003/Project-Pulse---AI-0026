@@ -263,7 +263,7 @@ function Dashboard() {
                     <span
                       className={`rounded px-1.5 py-0.5 font-mono text-[10px] ring-1 ${severityTone[risk.severity]}`}
                     >
-                      {risk.severity.slice(0, 4).toUpperCase()}
+                      {risk.severity === "medium" ? "MED" : risk.severity.toUpperCase()}
                     </span>
                     <div className="min-w-0">
                       <div className="text-[13px] text-ice">
